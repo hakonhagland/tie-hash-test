@@ -31,7 +31,7 @@ the code:
 
   my @keys = qw(forename surename date_of_birth gender);
   my %person;
-  tie %person, 'Tie;::Hash::FixedKeys', @keys;
+  tie %person, 'Tie::Hash::FixedKeys', @keys;
 
 the hash C<%person> can only contain the keys forename, surname, 
 date_of_birth and gender. Any attempt to set a value for another key
