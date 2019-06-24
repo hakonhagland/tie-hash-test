@@ -9,5 +9,5 @@ perl:
 before_install:
   - cpanm -n Module::Build
   - cpanm -n Devel::Cover::Report::Coveralls
-script:
-  perl Build.PL && ./Build build && cover -test -report coveralls
+
+script: perl Build.PL && ./Build build && cover -test -report coveralls
